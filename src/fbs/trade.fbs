@@ -1,0 +1,13 @@
+// trade.fbs
+
+namespace trade;
+
+table Trade {
+  buy_order_id: ulong;
+  sell_order_id: ulong;
+  price: double;
+  quantity: double;
+  timestamp: ulong; // 毫秒级时间戳
+}
+
+root_type Trade;

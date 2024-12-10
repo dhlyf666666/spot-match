@@ -1,0 +1,6 @@
+kafka_config:
+  brokers: "localhost:9092"
+#mysql_config:
+#  url: "mysql://username:password@localhost:3306/database_name"
+postgresql_config:
+  url: "postgresql://username:password@host:ip/db?sslmode=require"

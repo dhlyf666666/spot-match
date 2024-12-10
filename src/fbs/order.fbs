@@ -1,0 +1,18 @@
+// order.fbs
+namespace order;
+
+enum Side : byte { Buy = 0, Sell = 1 }
+
+enum OrderType : byte { Limit = 0, Market = 1 }
+
+table Order {
+  id: ulong;
+  user_id: ulong;
+  price: double;
+  quantity: double;
+  timestamp: ulong; // 毫秒级时间戳
+  order_type: OrderType;
+  side: Side;
+}
+
+root_type Order;

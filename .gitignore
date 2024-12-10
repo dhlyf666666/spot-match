@@ -1,0 +1,100 @@
+# macOS 系统文件
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+target/
+
+# Maven
+log/
+target/
+!src/main/resources/
+
+# Gradle
+.gradle
+build/
+
+# Go
+bin/
+pkg/
+vendor/
+*.out
+
+# 日志文件
+*.log
+
+# 包含敏感信息的文件
+*.key
+*.pem
+*.keystore
+
+# 临时文件
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# 编译生成的文件
+*.class
+*.jar
+*.war
+*.ear
+
+dependency-reduced-pom.xml
+
+# 忽略Cargo构建工件
+/target/
+
+# 忽略Cargo.lock文件（对于库项目）
+# 如果这是一个库项目，通常应该忽略Cargo.lock
+# 如果是二进制项目（应用程序），则不应忽略Cargo.lock
+#Cargo.lock
+
+# 忽略编译时生成的文件
+**/*.rs.bk
+
+# 忽略Rust编译缓存
+/.cargo/
+
+/Cargo.lock backup
+
+# 忽略输出的二进制文件
+**/*.exe
+**/*.dll
+**/*.dylib
+**/*.so
+
+# 忽略临时文件
+*.log
+*.tmp
+*.temp
+
+# 忽略覆盖率和调试工具输出
+/coverage/
+/debug/
+**/*.profraw
+
+# 忽略由IDE生成的文件
+# JetBrains IDEs (CLion, IntelliJ IDEA, etc.)
+.idea/
+/*.iml
+/out/
+
+# VSCode IDE
+.vscode/
+/*.code-workspace
+
+# MacOS特有文件
+.DS_Store
+
+# Windows特有文件
+Thumbs.db

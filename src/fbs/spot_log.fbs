@@ -1,0 +1,23 @@
+// spot_log.fbs
+
+include "order.fbs";  // 引用 order 表定义文件
+include "trade.fbs";  // 引用 trade 表定义文件
+
+namespace spot_log;
+
+// 定义 LogType 枚举
+enum LogType : byte {
+    NewOrder = 0,      // 新订单
+    CancelOrder = 1,   // 取消订单
+    Trade = 2          // 订单成交
+}
+
+// 定义 SpotLog 表
+table SpotLog {
+    log_type: LogType;        // 日志类型
+    seq_id: ulong;            // 序列 ID
+    order: order.Order;       // 引用的 Order 表
+    trade: trade.Trade;       // 引用的 Trade 表
+}
+
+root_type SpotLog;
